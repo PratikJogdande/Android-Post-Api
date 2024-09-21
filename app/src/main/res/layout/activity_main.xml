@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post API"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="24dp"
+        android:textColor="@color/textColor"/>
+
+    <!-- Name EditText -->
+    <EditText
+        android:id="@+id/idEdtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:padding="12dp"
+        android:textColor="@color/textColor"/>
+
+    <!-- Job EditText -->
+    <EditText
+        android:id="@+id/idEdtJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Job"
+        android:padding="12dp"
+        android:textColor="@color/textColor"/>
+
+    <!-- Post Data Button -->
+    <Button
+        android:id="@+id/idBtnPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Data"
+        android:background="@drawable/button_background"
+    android:textColor="@color/background"
+    android:layout_marginTop="16dp"
+    android:padding="12dp"/>
+
+    <!-- Response TextView -->
+    <TextView
+        android:id="@+id/idTVResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <!-- Loading ProgressBar -->
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
